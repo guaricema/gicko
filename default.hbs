@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>{{meta_title}}</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="{{asset "images/favicon-32x32.png"}}">
+	<link rel="icon" type="image/png" sizes="96x96" href="{{asset "images/favicon-96x96.png"}}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{asset "images/favicon-16x16.png"}}">
+    <link rel="shortcut icon" href="{{asset "images/favicon.ico"}}">
+	<link href='https://fonts.googleapis.com/css?family=Cantarell:400,400italic,700,700italic|Grand+Hotel' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{asset "css/fontello.css"}}">
+    <link rel="stylesheet" href="{{asset "css/guaricema.css"}}">
+    {{ghost_head}}
+</head>
+<body>
+	<div class="menu" id="menu">
+		{{navigation}}
+	</div>
+	<i class="icon-left-open spinner" id="spinner"></i>
+	<div class="wrapper">
+		<div class="sidebar" style="background-image:url({{@blog.cover}})">
+			<div class="sidebar-inner">
+				<div class="title"><a href="{{@blog.url}}">{{@blog.title}}</a></div>
+				{{> aside}}
+				<div class="footer">
+					Gicko theme inspired by <a href="https://github.com/damianmuti/sticko">Sticko</a>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			{{{body}}}
+		</div>
+	</div>
+	{{ghost_foot}}
+	<script src="{{asset "js/script.js"}}"></script>
+</body>
+</html>

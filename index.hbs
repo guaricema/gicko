@@ -1,0 +1,12 @@
+{{!< default}}
+{{#foreach posts}}
+	<div class="post">
+		<header>
+			<h1 class="title"><a href="{{url}}" title="{{title}}">{{#if featured}}<i class="icon-star"></i> {{/if}}{{title}}</a></h1>
+			{{> postmeta}}
+		</header>
+		<div>{{excerpt}}&hellip;</div>
+		<div class="readmore"><a href="{{url}}" class="button">Keep reading &rarr;</a></div>
+	</div>
+{{/foreach}}
+{{pagination}}

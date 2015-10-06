@@ -1,0 +1,11 @@
+{{#if post}}
+    {{#post}}
+        {{> author}}
+    {{/post}}
+{{else}}
+    {{#foreach posts}}
+        {{#if @first}}
+            {{> author}}
+        {{/if}}
+    {{/foreach}}
+{{/if}}
