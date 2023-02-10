@@ -7,23 +7,24 @@
 	<link rel="icon" type="image/png" sizes="96x96" href="{{asset "images/favicon-96x96.png"}}">
 	<link rel="icon" type="image/png" sizes="16x16" href="{{asset "images/favicon-16x16.png"}}">
     <link rel="shortcut icon" href="{{asset "images/favicon.ico"}}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link href='https://fonts.googleapis.com/css?family=Cantarell:400,400italic,700,700italic|Grand+Hotel' rel='stylesheet' type='text/css'>
+	<style>:root { --main-color: {{@site.accent_color}}; }</style>
     <link rel="stylesheet" href="{{asset "css/fontello.css"}}">
-    <link rel="stylesheet" href="{{asset "css/guaricema.css"}}">
+    <link rel="stylesheet" href="{{asset "css/gicko.css"}}">
     {{ghost_head}}
 </head>
 <body>
-	<div class="menu" id="menu">
-		{{navigation}}
-	</div>
-	<i class="icon-left-open spinner" id="spinner"></i>
 	<div class="wrapper">
 		<div class="sidebar" style="background-image:url({{@site.cover_image}})">
 			<div class="sidebar-inner">
 				<div class="title"><a href="{{@site.url}}">{{@site.title}}</a></div>
 				{{> aside}}
+				<div class="menu">
+					{{navigation}}
+				</div>
 				<div class="footer">
-					Gicko theme inspired by <a href="https://github.com/damianmuti/sticko">Sticko</a>
+					gicko theme by <a href="https://github.com/guaricema">@guaricema</a>
 				</div>
 			</div>
 		</div>
@@ -32,6 +33,7 @@
 		</div>
 	</div>
 	{{ghost_foot}}
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="{{asset "js/script.js"}}"></script>
 </body>
 </html>
