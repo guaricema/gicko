@@ -1,4 +1,7 @@
 {
-  "name": "Gicko",
-  "version": "0.0.1"
+  "name": "gicko",
+  "version": "0.0.1",
+  "author": {
+    "email": "pasha@fedotov.org"
+  }
 }
