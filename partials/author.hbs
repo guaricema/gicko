@@ -1,12 +1,13 @@
 <div class="author">
-	<div class="avatar"><img src="{{primary_author.profile_image}}" /></div>
-	<div class="name">{{primary_author.name}}</div>
-	<div class="bio">{{primary_author.bio}}</div>
-	<div class="location">{{primary_author.location}}</div>
+	{{#primary_author}}
+	<div class="avatar"><img src="{{profile_image}}" /></div>
+	<div class="name">{{name}}</div>
+	<div class="bio">{{bio}}</div>
+	<div class="location">{{location}}</div>
 	<div class="social">
-		<a href="https://github.com/guaricema"><i class="icon-github"></i></a>
-		<a href="https://plus.google.com/101028147899171394052/about"><i class="icon-gplus-squared"></i></a>
-		<a href="https://instagram.com/guaricema/"><i class="icon-instagram"></i></a>
-		<a href="skype:pavel.fedotov"><i class="icon-skype"></i></a>
+		{{#if website}}<a href="{{website}}"><i class="fa-solid fa-link"></i></a>{{/if}}
+		{{#if facebook}}<a href="https://facebook.com/{{facebook}}"><i class="fa-brands fa-facebook"></i></a>{{/if}}
+		{{#if twitter}}<a href="https://twitter.com/{{twitter}}"><i class="fa-brands fa-twitter"></i></a>{{/if}}
 	</div>
+	{{/primary_author}}
 </div>
