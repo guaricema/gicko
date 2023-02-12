@@ -3,12 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<title>{{meta_title}}</title>
-	<link rel="icon" type="image/png" sizes="32x32" href="{{asset "images/favicon-32x32.png"}}">
-	<link rel="icon" type="image/png" sizes="96x96" href="{{asset "images/favicon-96x96.png"}}">
-	<link rel="icon" type="image/png" sizes="16x16" href="{{asset "images/favicon-16x16.png"}}">
-    <link rel="shortcut icon" href="{{asset "images/favicon.ico"}}">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link href='https://fonts.googleapis.com/css?family=Cantarell:400,400italic,700,700italic|Grand+Hotel' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,400italic,700,700italic|Grand+Hotel' rel='stylesheet' type='text/css'>
 	<style>:root { --main-color: {{@site.accent_color}}; }</style>
     <link rel="stylesheet" href="{{asset "css/fontello.css"}}">
     <link rel="stylesheet" href="{{asset "css/gicko.css"}}">
@@ -18,7 +14,11 @@
 	<div class="wrapper">
 		<div class="sidebar" style="background-image:url({{@site.cover_image}})">
 			<div class="sidebar-inner">
+				{{#if @site.logo}}
+				<img src="{{@site.logo}}" alt="{{@site.title}} logo" class="logo">
+				{{else}}
 				<div class="title"><a href="{{@site.url}}">{{@site.title}}</a></div>
+				{{/if}}
 				{{> aside}}
 				<div class="menu">
 					{{navigation}}

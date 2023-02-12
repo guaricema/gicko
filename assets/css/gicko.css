@@ -52,7 +52,7 @@ table {
 /* common */
 
 body {
-	font-family: 'Cantarell', Tahoma, sans-serif;
+	font-family: 'Ubuntu', Tahoma, sans-serif;
 	font-size: 16px;
 	background-color: #f0f0f0;
 	height: 100%;
@@ -90,6 +90,11 @@ body {
 	float: left;
 	height: 100%;
 	width: 100%;
+}
+
+.sidebar .logo {
+	display: block;
+	margin: 80px auto 50px auto;
 }
 
 .sidebar .title {
