@@ -193,15 +193,14 @@ body {
 
 .content h1.title {
 	border-bottom: 1px solid #ddd;
-	text-transform: uppercase;
-	font-size: 26px;
-	font-weight: bold;
-	padding-bottom: 15px;
+	font-size: 22px;
+	font-weight: 600;
+	padding-bottom: 10px;
 	margin-bottom: 20px;
 }
 
 .content h1.title a {
-	color: #555;
+	color: #333;
 	border: none;
 }
 
@@ -295,6 +294,7 @@ body {
 .menu ul li {
 	content: '';
 	display: inline;
+	margin: 0px 5px 0px 5px;
 }
 
 .menu ul li a {
